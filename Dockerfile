@@ -2,7 +2,7 @@
 FROM mambaorg/micromamba:1.5.1
 
 # Create a named volume at "/opt/admet_ai/data" in the container to persist data across container runs
-VOLUME /opt/admet_ai/data
+-V /opt/admet_ai/data
 
 # Switch to the root user to perform some installation tasks
 USER root
